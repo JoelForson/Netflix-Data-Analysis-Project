@@ -1,51 +1,54 @@
-# 🎬 Netflix Content Data Analysis and Recommendation Project
+# Netflix Content Data Analysis and Recommendation Project
 
-## 📘 Executive Summary
+## xecutive Summary
 
 This project investigates trends, audience behavior, and content characteristics within Netflix’s streaming catalog to uncover what drives viewership, ratings, and engagement.  
-By combining **data cleaning, exploratory data analysis (EDA), and machine learning models**, we identified patterns in **genre popularity, content performance, and country-level production trends**.
+By combining **data cleaning, exploratory data analysis (EDA), and machine learning ** concepts, We identified patterns in **genre popularity, content performance, and country-level production trends**.
 
 Key outcomes include:
 - Identifying that **Comedy-Drama** series have the highest sustained engagement across multiple demographics.  
 - Building a **content success prediction model** using clustering and supervised learning to forecast audience engagement based on features such as rating, runtime, and genre mix.  
-- Recommending Netflix develop an **original Comedy-Drama TV show** with a global, relatable cast — supported by measurable data patterns.
+- Based on the clustering model, our recomendation is that Netflix develop an **Original Comedy-Drama TV show** with a global, relatable cast — supported by measurable data patterns.
 
 ---
 
-## 🧩 Project Overview
+## Project Overview
 
 **Objective:**  
 To analyze Netflix content data to uncover insights into viewer preferences, regional production trends, and genre-driven engagement, and to use these findings to guide future content strategy.
 
 **Tech Stack:**  
 - **Python** (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-- **Excel / SQL** (for validation and cross-checking)
 - **Machine Learning Models:** K-Means Clustering, Random Forest Classifier, Linear Regression
+- **Excel** (for validation and cross-checking)
 
+  
 **Dataset:**  
 The dataset included Netflix titles with metadata such as:
 - Title, Genre, Country, Year, Duration, Rating, and Viewership metrics.
 - Content type (Movie vs. TV Show)
-- User ratings and hours watched (synthetic engagement proxy).
+- User ratings and hours watched (Aggregated engagement data).
+<img width="1079" height="254" alt="Screenshot 2025-12-05 at 1 10 54 AM" src="https://github.com/user-attachments/assets/115f7694-228e-4b24-814e-4510d52c26f1" />
 
----
+------------------------------------------------------------
 
-## 🔍 Data Preparation & Cleaning
+## Data Preparation & Cleaning
 
 Before analysis, we performed extensive data wrangling to ensure consistency and quality:
 
 | Step | Description |
 |------|--------------|
 | **Data Merging** | Combined multiple Netflix datasets (titles, ratings, and engagement) using title and year as keys. |
+| **Value Aggregation** | Summed and averaged data in values such as “Hours Viewed” and “Avg Runtime” for shows that had multiple seasons merged |
 | **Normalization** | Standardized genres (e.g., merged “Comedy” and “Comedies”), removed duplicates and variant spellings. |
-| **Missing Values** | Filled nulls in “Country” and “Rating” using mode-based imputation and clustering-based inference. |
+| **Missing Values** | Filled nulls in values such as “Country” and “Rating” using mode-based imputation and clustering-based inference. |
 | **Feature Engineering** | Extracted features such as runtime in minutes, genre diversity score, and binary indicators (e.g., `is_series`). |
 
-This process yielded a **clean dataset of over 6,000 titles**, enabling high-fidelity modeling.
+This process yielded a clean dataset of over 2,000 titles, enabling high-fidelity modeling.
 
----
+---------------------------------
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 **1. Content Distribution**
 - 68% of Netflix content was **Movies**, 32% **TV Shows**.
@@ -53,7 +56,7 @@ This process yielded a **clean dataset of over 6,000 titles**, enabling high-fid
 
 **2. Genre Performance**
 - **Comedy-Drama** titles exhibited a 35% higher engagement than pure comedies or dramas alone.  
-- **Thriller** and **Documentary** genres also performed well but showed shorter lifespan of audience interest.
+- **Thriller** and **Documentary** genres also per  formed well but showed shorter lifespan of audience interest.
 
 **3. Country-Level Insights**
 - The **U.S., India, South Korea, and the U.K.** were the largest content producers.
@@ -66,9 +69,9 @@ This process yielded a **clean dataset of over 6,000 titles**, enabling high-fid
 **5. Viewer Trends**
 - Over the years, Netflix’s catalog has shifted toward **serialized content** (multi-season shows) and **genre hybrids**.
 
----
+----------------------------------------------------------
 
-## 🤖 Machine Learning Models & Insights
+## Machine Learning Models & Insights
 
 ### **1. Clustering Analysis (K-Means)**
 
@@ -107,7 +110,7 @@ Achieved **R² = 0.78**, indicating strong predictive reliability.
 
 ---
 
-## 💡 Strategic Recommendations
+## Strategic Recommendations
 
 Based on our analysis and models:
 
@@ -121,21 +124,21 @@ Based on our analysis and models:
 
 ---
 
-## 🎥 Suggested Project: *"College Town"*
+## Suggested Project: *"College Town"*
 
 A **Netflix Original Comedy-Drama TV Show** inspired by the data insights.
 
 **Premise:**  
 The show follows a group of diverse twenty-somethings balancing career ambitions, cultural identity, and love in a globalized world. The tone mixes **humor, heart, and authenticity**, mirroring Netflix’s strongest-performing content attributes.
 
-**Why This Works (Data-Driven Justification):**
+**Why This Works:**
 - Reflects hybrid genre engagement success (+35% engagement boost).
 - Appeals to cross-cultural audiences (high correlation with international ratings).
 - Fits Netflix’s content trend toward serialized storytelling and emotional realism.
 
----
+-----------------------------------------------------
 
-## 📈 Impact & Conclusion
+## Impact & Conclusion
 
 This project highlights how **data analytics and machine learning** can inform not only viewer engagement insights but also **creative development strategy**.  
 Through clustering, regression, and genre-based modeling, we demonstrated that **Comedy-Drama hybrid series** align best with global consumption patterns — offering both artistic and commercial opportunity.
@@ -144,13 +147,4 @@ Netflix can leverage these insights to:
 - Optimize investment decisions,
 - Personalize recommendations, and
 - Shape future content pipelines rooted in data-backed storytelling.
-
----
-
-## 🧠 Contributors
-**Project Lead:** Joel Forson  
-**Tools:** Python, Excel, SQL  
-**Key Libraries:** Pandas, Scikit-learn, Matplotlib, Seaborn  
-**Dataset:** Netflix Titles, Viewer Engagement Metrics (cleaned and merged)
-
-
+  

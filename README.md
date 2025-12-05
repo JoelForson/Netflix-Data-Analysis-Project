@@ -1,6 +1,6 @@
 # Netflix Content Data Analysis and Recommendation Project
 
-## xecutive Summary
+## Executive Summary
 
 This project investigates trends, audience behavior, and content characteristics within Netflix’s streaming catalog to uncover what drives viewership, ratings, and engagement.  
 By combining **data cleaning, exploratory data analysis (EDA), and machine learning ** concepts, We identified patterns in **genre popularity, content performance, and country-level production trends**.
